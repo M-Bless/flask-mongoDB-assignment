@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="Login-body">
+            <div class="Login-container">
+                <form id="loginForm" action="" method="POST">
+                    <h2>Login</h2>
+                    <div class="datafield">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="Username" name="Username" required>
+                        <label for="Username">Username:</label>
+                    </div>
+
+                    <div class="datafield">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="recover">
+                        <label><a href="forgotpassword.html" id="forgotPassword">Forget Password</a></label>
+                    </div>
+
+                    <a href="form.html">
+                        <button type="button">Login</button>
+                    </a>
+
+                    <div class="Register">
+                        <p>First time here? <a href="register.html">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

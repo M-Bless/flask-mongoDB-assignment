@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="formbody">
+            <div class="formcontainer">
+
+                <!-- User Details Form -->
+                <form id="userDetailsForm">
+                    <h2>User Details Form</h2>
+                    
+                    <!-- Search Section -->
+                    <div class="searchContainer">
+                        <input type="text" id="searchRegNo" required>
+                        <Label for="phone">Mobile Phone Number:</Label>
+                        
+                        <div class="searchbtn">
+                        <button onclick="searchContact()">
+                            <ion-icon name="search-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="formdatafield">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email:</label>
+                    </div>
+
+                    <div class="formdatafield">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <input type="text" id="address" name="address" required>
+                        <label for="address">Address:</label>
+                    </div>
+
+                    <div class="formdatafield">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                        <input type="text" id="regNo" name="regNo" required>
+                        <label for="regNo">Registration Number:</label>
+                    </div>
+
+                    <div class="F-Register">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Ionicons and JavaScript -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="text">Registration</div>
+      <div class="underline"></div>
+    </div>
+    <form action="/register" method="post" class="inputs">
+      <div class="input">
+        <img src="{{ url_for('static', filename='Assets/person.png') }}" alt="User Icon" />
+        <input type="text" name="name" placeholder="Name" required />
+      </div>
+      <div class="input">
+        <img src="{{ url_for('static', filename='Assets/email.png') }}" alt="Email Icon" />
+        <input type="email" name="email" placeholder="Email ID" required />
+      </div>
+      <div class="input">
+        <img src="{{ url_for('static', filename='Assets/password.png') }}" alt="Password Icon" />
+        <input type="password" name="password" placeholder="Password" required />
+      </div>
+      <div class="submit-container">
+        <button type="submit" class="submit gray">Register</button>
+        <a href="{{ url_for('login') }}" class="submit">Login</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
